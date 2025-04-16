@@ -5,6 +5,7 @@ phases:
       docker: 20
   pre_build:
     commands:
+      - docker login -u "luccajbastos" -p "YNY*qnp9cvx.rqu1uhr"
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region us-east-1 --no-include-email)
